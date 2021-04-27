@@ -1,5 +1,4 @@
-This project is build on spring boot with spring data JPA as persistence and H2 as in-memory db, with form login in spring security
-and thymeleaf as frontend.
+This project is build on spring boot with spring data JPA as persistence and H2 as in-memory db, with form login and BCrypt encryption in spring security and thymeleaf as frontend.
 The Blood bank is a project that has two roles: admin and user.
 Admin:
      ->Can register the donor.
