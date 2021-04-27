@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Donor</title>
+</head>
+<body>
+<a href="/showAddNewDonor">Add New Donor</a>
+<a href="/showGetDonor">Search Donor by Name</a>
+<a href="/logout">Logout</a>
+<a href="">Detail Fragment</a>
+<h2>Add New Donor</h2>
+<form action="/saveDonor" method="post">
+    Name: <input type="text" name="fullName">
+    Email:<input type="email" name="email">
+    Password:<input type="password" name="password">
+    Blood Group:<input type="text" name="bloodGroup">
+    Address:<input type="text" name="address">
+    Phone:<input type="tel" name="phone">
+    <input type="submit" value="save">
+</form>
+</body>
+</html>

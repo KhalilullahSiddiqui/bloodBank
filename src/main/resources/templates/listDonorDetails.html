@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Donors</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<a href="/showAddNewDonor">Add New Donor</a>
+<a href="/showGetDonor">Search Donor by Name</a>
+<a href="/logout">Logout</a>
+<a href="">Detail Fragment</a>
+
+<div>
+    <h2>Donor List</h2>
+    <table>
+
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Blood Group</th>
+            <th>Address</th>
+            <th>Phone</th>
+        </tr>
+        <tr th:each="donor : ${donors}">
+            <td> <span th:text="${donor.fullName}"></span></td>
+            <td> <span th:text="${donor.email}">Email</span></td>
+            <td> <span th:text="${donor.password}">Password</span></td>
+            <td> <span th:text="${donor.bloodGroup}">Blood Group</span></td>
+            <td> <span th:text="${donor.address}">Address</span></td>
+            <td> <span th:text="${donor.phone}">Phone</span></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
